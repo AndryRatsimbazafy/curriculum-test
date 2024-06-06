@@ -1,0 +1,48 @@
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  width: 93%;
+  padding: 4% 6% 1% 6%;
+}
+
+.home-top {
+  display: flex;
+  width: 95%;
+  height: 20%;
+  border: 1px solid #008b5d;
+  border-radius: 10px;
+  background-color: #008b5d;
+}
+
+.home-banner {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 20px 20px 20px;
+  align-items: center;
+  color: white;
+  gap: 25px;
+  width: 100%;
+}
+
+.home-middle {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.home-bottom {
+  width: 95%;
+}
