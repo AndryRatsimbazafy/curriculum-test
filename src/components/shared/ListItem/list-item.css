@@ -1,0 +1,27 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  width: 93%;
+}
+
+.list-item:hover {
+  background-color: #dbdbdb;
+}
+
+.list-item-content {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Allow content to take up remaining space */
+}
+
+.list-item-text {
+  margin-left: 5px; 
+}
+
+.list-item-end-icon {
+  margin-top: 2px; 
+  margin-left: auto; 
+}

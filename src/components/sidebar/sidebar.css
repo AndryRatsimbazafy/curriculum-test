@@ -1,0 +1,117 @@
+.sidebar {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #ececed;
+  height: 100vh;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sidebar-top {
+  display: flex;
+  border-bottom: 1px solid #ececed;
+  width: 100%;
+  height: 8%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-image {
+  width: 45px;
+  height: 45px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.sidebar-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.list-item-edit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.list-item-input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 30px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-left: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.list-item-input:focus {
+  border-color: #ccc; /* Change border color on focus */
+}
+
+.list-item-close-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.sidebar-bottom {
+  border-top: 1px solid #ececed;
+  width: 100%;
+  height: 5%;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure endIcon is pushed to the right */
+}
+
+.profil-content {
+  display: flex;
+  align-items: center;
+}
+
+.profil-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+
+.profil-text {
+  margin-left: 10px; /* Add space between icon and text */
+}
+
+.profil-end-icon {
+  margin-left: 10px; /* Add space between text and endIcon */
+}
