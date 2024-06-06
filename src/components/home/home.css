@@ -13,6 +13,7 @@
   overflow: hidden;
   width: 93%;
   padding: 4% 6% 1% 6%;
+  gap: 20px;
 }
 
 .home-top {
@@ -41,8 +42,70 @@
   height: 90%;
   overflow-y: auto;
   overflow-x: hidden;
+  gap: 20px;
+}
+
+.home-grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.home-grid-item {
+  box-sizing: border-box;
+}
+
+.home-grid-item.full-width {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .home-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-grid-item.full-width {
+    grid-column: 1 / 3;
+  }
+}
+
+.home-button {
+  display: inline-block;
+  background-color: #1688FE;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 15%;
+}
+
+.home-button:hover {
+  background-color: #1976D2;
+}
+
+.home-delete-acount {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 95%;
+  padding: 20px 20px 20px 20px;
 }
 
 .home-bottom {
   width: 95%;
+  border-top: 1px solid #ececed;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
 }

@@ -1,36 +1,19 @@
-import React, { useState } from 'react';
-import './custom-input.css';
+import React from "react";
+import "./custom-input.css";
 
-interface IProps {
-  label: string;
-  value: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+interface CustomInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  label?: string;
+  endIcon?: React.ReactNode;
 }
 
-const CustomInput: React.FC<IProps> = ({ label, value, onChange }) => {
-  const [isFocused, setIsFocused] = useState(false);
-
-  const handleFocus = () => setIsFocused(true);
-  const handleBlur = () => setIsFocused(false);
-
+const CustomInput: React.FC<CustomInputProps> = ({ label, endIcon, ...rest }) => {
   return (
-    <div className={`custom-textfield ${isFocused ? 'focused' : ''}`}>
-      <input
-        type="text"
-        value={value}
-        onChange={onChange}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        className="custom-textfield-input"
-      />
-      <label className={`custom-textfield-label ${value ? 'shrink' : ''}`}>
-        {label}
-      </label>
-      <fieldset className="custom-textfield-fieldset">
-        <legend className={`custom-textfield-legend ${value ? 'shrink' : ''}`}>
-          {label}
-        </legend>
-      </fieldset>
+    <div className="custom-input-container">
+      {label && <label className="custom-input-label">{label}</label>}
+      <div className="custom-input-wrapper">
+        <input className="custom-input" {...rest} />
+        {endIcon && <div className="end-icon">{endIcon}</div>}
+      </div>
     </div>
   );
 };
