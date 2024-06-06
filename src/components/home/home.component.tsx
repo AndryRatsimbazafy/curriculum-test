@@ -88,7 +88,7 @@ const Home: React.FC<IProps> = () => {
               </div>
               <p style={{ fontSize: "15px" }}>
                 Use this email to log in to your{" "}
-                <a href="#" style={{ textDecoration: "none" }}>
+                <a href="https://github.com/AndryRatsimbazafy/curriculum-test" style={{ textDecoration: "none" }}>
                   resumedone.io
                 </a>{" "}
                 account and receive notifications.
@@ -101,7 +101,7 @@ const Home: React.FC<IProps> = () => {
               <input type="checkbox" />
               <span style={{ marginLeft: 5 }}>
                 Show my profile to serious employers on{" "}
-                <a href="#" style={{ textDecoration: "none" }}>
+                <a href="https://github.com/AndryRatsimbazafy/curriculum-test" style={{ textDecoration: "none" }}>
                   hirethesbest.io
                 </a>{" "}
                 for free
@@ -120,7 +120,7 @@ const Home: React.FC<IProps> = () => {
           </div>
           <div className="home-get-in-touch">
             <p style={{ fontSize: "16px", margin: 0 }}>
-              <a href="#" style={{ textDecoration: "none" }}>
+              <a href="https://github.com/AndryRatsimbazafy/curriculum-test" style={{ textDecoration: "none" }}>
                 Get in touch with our support team
               </a>{" "}
               if you have any question or want to leave some feedback. We’ll be
@@ -129,10 +129,10 @@ const Home: React.FC<IProps> = () => {
           </div>
         </div>
         <div className="home-bottom">
-            <a href="#" style={{ textDecoration: "none", color: "black" }}>Terms & Conditions</a>
-            <a href="#" style={{ textDecoration: "none", color: "black" }}>Privacy Policy</a>
-            <a href="#" style={{ textDecoration: "none", color: "black" }}>FAQ</a>
-            <a href="#" style={{ textDecoration: "none", color: "black" }}>Contact Us</a>
+            <a href="https://github.com/AndryRatsimbazafy/curriculum-test" style={{ textDecoration: "none", color: "black" }}>Terms & Conditions</a>
+            <a href="https://github.com/AndryRatsimbazafy/curriculum-test" style={{ textDecoration: "none", color: "black" }}>Privacy Policy</a>
+            <a href="https://github.com/AndryRatsimbazafy/curriculum-test" style={{ textDecoration: "none", color: "black" }}>FAQ</a>
+            <a href="https://github.com/AndryRatsimbazafy/curriculum-test" style={{ textDecoration: "none", color: "black" }}>Contact Us</a>
         </div>
       </div>
     </div>
