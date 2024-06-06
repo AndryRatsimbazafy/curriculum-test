@@ -118,9 +118,22 @@ const Home: React.FC<IProps> = () => {
               Yes, Delete my account
             </p>
           </div>
-          <div className="home-get-in-touch">Get in touch</div>
+          <div className="home-get-in-touch">
+            <p style={{ fontSize: "16px", margin: 0 }}>
+              <a href="#" style={{ textDecoration: "none" }}>
+                Get in touch with our support team
+              </a>{" "}
+              if you have any question or want to leave some feedback. We’ll be
+              happy to hear from you.
+            </p>
+          </div>
         </div>
-        <div className="home-bottom">Footer</div>
+        <div className="home-bottom">
+            <a href="#" style={{ textDecoration: "none", color: "black" }}>Terms & Conditions</a>
+            <a href="#" style={{ textDecoration: "none", color: "black" }}>Privacy Policy</a>
+            <a href="#" style={{ textDecoration: "none", color: "black" }}>FAQ</a>
+            <a href="#" style={{ textDecoration: "none", color: "black" }}>Contact Us</a>
+        </div>
       </div>
     </div>
   );
